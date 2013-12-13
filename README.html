@@ -1,27 +1,38 @@
-# Installation
-
-* Install [Ruby](https://www.ruby-lang.org/en/downloads/) version 1.9 or higher 
-* Install bundler gem using ```gem install bundler```
-* Install [nodejs](http://nodejs.org/download/) version 0.8 or higher with npm support
-* Install following node modules globally ```npm install -g grunt-cli bower```
-* Open a console & navigate to markup project directory (this directory) and issue following commands:
-	* ``` bundle install ```
-	* ``` npm install ```
-	* ``` bower install ```
-
-# General guidelines
-
-* All rules should be class based to ensure maximum reusability
-* All images related to styling must be set with css background property. No image tag is allowed for deign purposes. Also use images only when it is mandatory, use CSS3 whenever possible to generate background effect. Also use [compass-rgbapng](https://github.com/aaronrussell/compass-rgbapng) plugin to enable cross browser support for rgba() if you are using.   
-* Use of variables & mixins are highly recommended to keep code minimal & configurable.
-* Every colors & font sizes & fonts must be defined as variables and used thoroughly whenever needed.
-* Use mixins, helpers & utilities provided by [compass](http://compass-style.org/reference/compass/) library whenever possible. Write your own mixins only if there isn't one available in compass. For example, instead of adding browser prefixes manually, use compass CSS3 mixins like border-radius etc. that will take care of adding browser prefixes in generated css files. Also hacks like clearfix should also be used from compass definition.
-* Use compass's [sprite helper](http://compass-style.org/reference/compass/helpers/sprites/) to generate css sprites for icons and use the sprites while writing rules.
-* If needed, use a grid framework like [susy](http://susy.oddbird.net/) or [singularitygs](https://github.com/Team-Sass/Singularity) instead of using a css based grid framework to avoid use of extra non-semantic classes in markup. This two frameworks will be installed with the ```bundle install``` command and to use the chosen one, just uncomment the respective line in config.rb
-* Use ```grunt compass:dev``` to compile files manually and use ```grunt watch``` to ensure autocompile of scss files or ```bundle exec guard``` during markup development to ensure autocompile & live reload in browsers (have to install [livereload extension](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-) in browser)
-
-# File structure
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1>Installation</h1>
+<ul>
+<li>Install <a href="https://www.ruby-lang.org/en/downloads/">Ruby</a> version 1.9 or higher</li>
+<li>Install bundler gem using <code>gem install bundler</code></li>
+<li>Install <a href="http://nodejs.org/download/">nodejs</a> version 0.8 or higher with npm support</li>
+<li>Install following node modules globally <code>npm install -g grunt-cli bower</code></li>
+<li>Open a console &amp; navigate to markup project directory (this directory) and issue following commands:
+<ul>
+<li><code>bundle install</code></li>
+<li><code>npm install</code></li>
+<li><code>bower install</code></li>
+</ul></li>
+</ul>
+<h1>General guidelines</h1>
+<ul>
+<li>All rules should be class based to ensure maximum reusability</li>
+<li>All images related to styling must be set with css background property. No image tag is allowed for deign purposes. Also use images only when it is mandatory, use CSS3 whenever possible to generate background effect. Also use <a href="https://github.com/aaronrussell/compass-rgbapng">compass-rgbapng</a> plugin to enable cross browser support for rgba() if you are using.</li>
+<li>Use of variables &amp; mixins are highly recommended to keep code minimal &amp; configurable.</li>
+<li>Every colors &amp; font sizes &amp; fonts must be defined as variables and used thoroughly whenever needed.</li>
+<li>Use mixins, helpers &amp; utilities provided by <a href="http://compass-style.org/reference/compass/">compass</a> library whenever possible. Write your own mixins only if there isn't one available in compass. For example, instead of adding browser prefixes manually, use compass CSS3 mixins like border-radius etc. that will take care of adding browser prefixes in generated css files. Also hacks like clearfix should also be used from compass definition.</li>
+<li>Use compass's <a href="http://compass-style.org/reference/compass/helpers/sprites/">sprite helper</a> to generate css sprites for icons and use the sprites while writing rules.</li>
+<li>If needed, use a grid framework like <a href="http://susy.oddbird.net/">susy</a> or <a href="https://github.com/Team-Sass/Singularity">singularitygs</a> instead of using a css based grid framework to avoid use of extra non-semantic classes in markup. This two frameworks will be installed with the <code>bundle install</code> command and to use the chosen one, just uncomment the respective line in config.rb</li>
+<li>Use <code>grunt compass:dev</code> to compile files manually and use <code>grunt watch</code> to ensure autocompile of scss files or <code>bundle exec guard</code> during markup development to ensure autocompile &amp; live reload in browsers (have to install <a href="http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-">livereload extension</a> in browser)</li>
+</ul>
+<h1>File structure</h1>
 <pre>
 .
 ├── Gemfile                             // required ruby gems
@@ -117,4 +128,6 @@
             ├── _config.scss
             ├── _forms.scss
             └── _typography.scss
-</pre>               
+</pre>
+</body>
+</html>
