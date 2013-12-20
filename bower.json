@@ -7,8 +7,5 @@
     "html5shiv": "fubhy/html5shiv",
     "matchmedia": "fubhy/matchmedia",
     "pie": "fubhy/pie"
-//    "angular": "~1.2.4",
-//    "requirejs": "~2.1.9",
-//    "modernizr": "~2.7.1"
   }
 }

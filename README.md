@@ -22,7 +22,7 @@
 
 # File structure
 
-<pre>
+```
 .
 ├── Gemfile                             // required ruby gems
 ├── Gruntfile.js                        // grunt configuration file
@@ -117,4 +117,4 @@
             ├── _config.scss
             ├── _forms.scss
             └── _typography.scss
-</pre>               
+```               
